@@ -17,6 +17,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	if (!dst && !src)
 		return (dst);
 	while (n--)
-		ft_memset(dst, ((unsigned char *)src)[n], n + 1);
+		ft_memset(dst + n, ((unsigned char *)src)[n], 1);
 	return (dst);
 }
