@@ -6,7 +6,7 @@
 #    By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 10:49:59 by dpenas-u          #+#    #+#              #
-#    Updated: 2022/03/21 12:50:52 by dpenas-u         ###   ########.fr        #
+#    Updated: 2022/03/21 12:56:44 by dpenas-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ GCC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -I.
 
-SRC = ft_isalpha.c ft_isdigit.c
+SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c
 
 OBJ_SRC = $(SRC:.c=.o)
 
