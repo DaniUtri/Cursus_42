@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:55:04 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/22 11:09:27 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/22 12:41:19 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
