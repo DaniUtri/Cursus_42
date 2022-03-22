@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:55:04 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/22 10:46:49 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/22 11:09:27 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,5 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 #endif
