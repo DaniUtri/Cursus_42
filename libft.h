@@ -23,6 +23,7 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
