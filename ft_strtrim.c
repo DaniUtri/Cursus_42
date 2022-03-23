@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 11:53:24 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/23 13:27:27 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/23 13:31:55 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	start = i;
 	i = ft_strlen(s1) - 1;
 	len = 0;
-	while (i && s1[i] && ft_strchr(set, s1[i]))
+	while (i > -1 && s1[i] && ft_strchr(set, s1[i]))
 		i--;
 	len = i - start + 1;
 	if (len < 0)
