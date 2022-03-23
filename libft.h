@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:55:04 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/23 10:48:28 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/23 11:18:27 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,5 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 #endif
