@@ -6,7 +6,7 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:55:04 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/25 10:10:25 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:31:53 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,5 @@ void	ft_putnbr_fd(int n, int fd);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
 #endif

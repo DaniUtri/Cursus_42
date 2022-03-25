@@ -6,7 +6,7 @@
 #    By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 10:49:59 by dpenas-u          #+#    #+#              #
-#    Updated: 2022/03/25 10:10:31 by dpenas-u         ###   ########.fr        #
+#    Updated: 2022/03/25 10:31:40 by dpenas-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 
 OBJ_SRC = $(SRC:.c=.o)
 
-BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c
 
 OBJ_BONUS = $(BONUS:.c=.o)
 
