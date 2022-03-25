@@ -6,7 +6,7 @@
 #    By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 10:49:59 by dpenas-u          #+#    #+#              #
-#    Updated: 2022/03/25 09:21:18 by dpenas-u         ###   ########.fr        #
+#    Updated: 2022/03/25 09:25:22 by dpenas-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	  ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	  ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c \
 	  ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
-	  ft_putstr_fd.c
+	  ft_putstr_fd.c ft_putendl_fd.c
 
 OBJ_SRC = $(SRC:.c=.o)
 
