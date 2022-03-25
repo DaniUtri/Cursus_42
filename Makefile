@@ -6,13 +6,13 @@
 #    By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 10:49:59 by dpenas-u          #+#    #+#              #
-#    Updated: 2022/03/25 09:28:07 by dpenas-u         ###   ########.fr        #
+#    Updated: 2022/03/25 09:40:47 by dpenas-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-GCC = gcc
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror -I.
 
