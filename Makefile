@@ -27,7 +27,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 OBJ_SRC = $(SRC:.c=.o)
 
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-		ft_lstadd_back.c
+		ft_lstadd_back.c ft_lstdelone.c
 
 OBJ_BONUS = $(BONUS:.c=.o)
 
