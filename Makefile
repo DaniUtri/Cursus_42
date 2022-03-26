@@ -34,8 +34,8 @@ OBJ_BONUS = $(BONUS:.c=.o)
 $(NAME): $(OBJ_SRC)
 	ar rcs $(NAME) $(OBJ_SRC)
 
-bonus: $(OBJ_SRC) $(OBJ_BONUS)
-	ar rcs $(NAME) $(OBJ_SRC) $(OBJ_BONUS)
+bonus: $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ_BONUS)
 
 all: $(NAME)
 
