@@ -6,15 +6,9 @@
 #    By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/21 10:49:59 by dpenas-u          #+#    #+#              #
-#    Updated: 2022/03/28 09:33:05 by dpenas-u         ###   ########.fr        #
+#    Updated: 2022/03/28 14:04:25 by dpenas-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-NAME = libft.a
-
-CC = gcc
-
-CFLAGS = -Wall -Wextra -Werror -I.
 
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	  ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
@@ -32,11 +26,21 @@ BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 
 OBJ_BONUS = $(BONUS:.c=.o)
 
+NAME = libft.a
+
+CC = gcc
+
+CFLAGS = -Wall -Wextra -Werror -I.
+
+B = .
+
 $(NAME): $(OBJ_SRC)
 	ar rcs $(NAME) $(OBJ_SRC)
 
-bonus: $(OBJ_BONUS)
+$(B): $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
+
+bonus: $(B)
 
 all: $(NAME)
 
@@ -48,4 +52,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all bonus fclean clean re
+.PHONY: all fclean clean re
