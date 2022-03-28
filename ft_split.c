@@ -6,14 +6,15 @@
 /*   By: dpenas-u <dpenas-u@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 13:45:43 by dpenas-u          #+#    #+#             */
-/*   Updated: 2022/03/25 08:49:44 by dpenas-u         ###   ########.fr       */
+/*   Updated: 2022/03/28 14:11:14 by dpenas-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static	int	ft_countw(char const *s, char c);
-static	void	ft_aux(char **str, char const *s, char c, int n_splt);
+static	void	ft_free(char **str, int i);
+static	int	ft_aux(char **str, char const *s, char c, int n_splt);
 
 char	**ft_split(char const *s, char c)
 {
@@ -34,11 +35,12 @@ char	**ft_split(char const *s, char c)
 	str = malloc(sizeof(char *) * (n_splt + 1));
 	if (!str)
 		return (0);
-	ft_aux(str, s, c, n_splt);
+	if (!ft_aux(str, s, c, n_splt))
+		return (0);
 	return (str);
 }
 
-static	void	ft_aux(char **str, char const *s, char c, int n_splt)
+static	int	ft_aux(char **str, char const *s, char c, int n_splt)
 {
 	int	i;
 	int	start;
@@ -55,9 +57,22 @@ static	void	ft_aux(char **str, char const *s, char c, int n_splt)
 		else
 			len = ft_strlen(s);
 		str[i] = ft_substr(s, 0, len);
+		if (!str[i])
+		{
+			ft_free(str, i);
+			return (0);
+		}
 		s += len;
 	}
 	str[n_splt] = 0;
+	return (1);
+}
+
+static	void	ft_free(char **str, int i)
+{
+	while (--i > -1)
+		free(str[i]);
+	free(str);
 }
 
 static	int	ft_countw(char const *s, char c)
